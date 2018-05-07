@@ -18,7 +18,7 @@ weight = 5
 # List your qualifications (such as academic degrees).
 
 [[education.courses]]
-  course = "Undergraduate in Automation"
+  course = "BS in Automation"
   institution = "Tsinghua University"
   year = 2015
  
@@ -26,6 +26,4 @@ weight = 5
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Haowei Sun is an undergraduate of automation at Tsinghua University. His research interests include intelligent transportation, optimization method and deep reinforcement learning.
