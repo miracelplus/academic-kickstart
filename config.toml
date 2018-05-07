@@ -226,7 +226,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "printfplus@gmail.com"
+    link = "mailto:printfplus@gmail.com"
 
   [[params.social]]
     icon = "google-scholar"
