@@ -2,6 +2,7 @@
 title = "神经网络的分支变种"
 date = 2018-05-08T14:23:26+08:00
 draft = false
+summary = "卷积神经网络以及循环神经网络"
 
 tags = ["Machine Learning"]
 categories = ["Machine Learning"]

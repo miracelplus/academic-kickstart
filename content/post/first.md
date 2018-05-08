@@ -2,6 +2,7 @@
 title = "机器学习初涉"
 date = 2018-05-08T13:17:26+08:00
 draft = false
+summary = "本部分总结来自于李弘毅教授的PPT(既然说一天学会机器学习那我就试试吧.....)"
 
 tags = ["Machine Learning"]
 categories = ["Machine Learning"]
@@ -12,8 +13,6 @@ caption = ""
 preview = true
 
 +++
-
->本部分总结来自于李弘毅教授的PPT(既然说一天学会机器学习那我就试试吧.....) 
 
 ### 大纲
 1. 深度学习简介 

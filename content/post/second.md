@@ -2,6 +2,7 @@
 title = "深度神经网络"
 date = 2018-05-08T14:19:26+08:00
 draft = false
+summary = "简单的说说深度神经网络，损失函数以及相关的训练方法"
 
 tags = ["Machine Learning"]
 categories = ["Machine Learning"]
