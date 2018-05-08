@@ -38,23 +38,20 @@ K是一个双输入单输出的PI控制器模型。
 #### 转换为双端子模型的形式
 双端子模型的具体形式：
 ![](http://osv1xytac.bkt.clouddn.com/17-9-25/93257588.jpg)
-就是将整个系统中除去K的部分单独提取出来作为一个广义的控制系统，K的输入是$u_{i-1}(s),e_i(s)$,输出是$\epsilon_i (s)$，广义系统P的输入就是$u_{i-1}(s),e_i(s)$，输出是$e_i(s),u_i(s),u_{i-1}(s),e_i(s)$，前两者是整个系统整体的输出，后两者是给控制器K的输入。
-$$
-w = u_{i-1}(s)
-$$
-$$
-z = u_i(s),e_i(s)
-$$
-$$
-v = e_i(s),u_{i-1}(s)
-$$
-$$
-r = \epsilon_i(s)
-$$
+就是将整个系统中除去K的部分单独提取出来作为一个广义的控制系统，K的输入是$u_{i-1}(s)$,$e_i(s)$,输出是$\epsilon_i(s)$
+
+广义系统P的输入就是$u_{i-1}(s)$,$e_i(s)$，输出是$e_i(s)$,$u_i(s)$,$u_{i-1}(s)$,$e_i(s)$，前两者是整个系统整体的输出，后两者是给控制器K的输入。
+
+$$w = u_{i-1}(s)$$
+$$z = u_i(s),e_i(s)$$
+
+$$v = e_i(s),u_{i-1}(s)$$
+
+$$r = \epsilon_i(s)$$
+
 #### 双端子模型的广义传递函数
 P是一个双输入四输出的控制系统，它的传递函数矩阵如下所示：
-$$
- \left[
+$$\left[
  \begin{matrix}
    e_i(s)  \\
    u_i(s) \\
@@ -73,9 +70,9 @@ $$
    u_{i-1}(s)  \\
    \epsilon_i(s) \\
   \end{matrix}
-  \right] 
-$$
-####构建matlab兼容的控制模型
+  \right]$$
+
+#### 构建matlab兼容的控制模型
 使用hinfsyn函数，函数的具体介绍如下图所示：
 
 >hinfsyn computes a stabilizing H∞ optimal lti/ss controller K for a partitioned lti plant P.
