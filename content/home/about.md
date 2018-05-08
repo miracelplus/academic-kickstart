@@ -26,4 +26,4 @@ weight = 5
 
 # Biography
 
-Haowei Sun is an undergraduate of automation at Tsinghua University. His research interests include intelligent transportation, optimization method and deep reinforcement learning.[Resume](http://www.writingspace.cc/resume_haowei_sun.pdf)
+Haowei Sun is an undergraduate of automation at Tsinghua University. His research interests include intelligent transportation, optimization method and deep reinforcement learning.
