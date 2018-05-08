@@ -23,8 +23,8 @@ publication = "Physica A: Statistical Mechanics and its Applications"
 publication_short = "Physica A"
 
 # Abstract and optional shortened version.
-abstract = "The abstract. Markdown and math can be used (note that math may require escaping as detailed in the red alert box below)."
-abstract_short = "A short version of the abstract."
+abstract = "Long-range temporal dependence is an important research perspective for modelling of traffic flow time series. Various methods have been proposed to depict the long-range temporal dependence, including autocorrelation function analysis, spectral analysis and fractal analysis. However, few researches have studied the daily temporal dependence (i.e. the similarity between different daily traffic flow time series), which can help us better understand the long-range temporal dependence, such as the origin of crossover phenomenon. Moreover, considering both types of dependence contributes to establishing more accurate model and depicting the properties of traffic flow time series. In this paper, we study the properties of daily temporal dependence by simple average method and Principal Component Analysis (PCA) based method. Meanwhile, we also study the long-range temporal dependence by Detrended Fluctuation Analysis (DFA) and Multifractal Detrended Fluctuation Analysis (MFDFA). The results show that both the daily and long-range temporal dependence exert considerable influence on the traffic flow series. The DFA results reveal that the daily temporal dependence creates crossover phenomenon when estimating the Hurst exponent which depicts the long-range temporal dependence. Furthermore, through the comparison of the DFA test, PCA-based method turns out to be a better method to extract the daily temporal dependence especially when the difference between days is significant."
+abstract_short = "Long-range temporal dependence."
 
 # Featured image thumbnail (optional)
 image_preview = ""
@@ -67,4 +67,4 @@ caption = ""
 
 +++
 
-Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
+Further details can be seen on [researchgate](https://www.researchgate.net/publication/321238679_A_better_understanding_of_long-range_temporal_dependence_of_traffic_flow_time_series)
