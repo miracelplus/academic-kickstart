@@ -62,8 +62,52 @@ p,f是确定的，我们需要确定一个q，我们的目的是让p*f/q的方�
 
 #### MCMC(马尔科夫蒙特卡洛)方法
 
-马尔科夫链的细致平稳性：
+**马尔科夫链的细致平稳性：**
 在非周期的马尔科夫链额度概率转移矩阵和每一个状态的概率满足：
 $$\pi p(j|i) = \pi (j)p(i|j)$$
 最终得到的状态$\pi$就是该马尔科夫链的平稳分布。
 
+**具体流程：**
+
+**matlab代码实现：**
+```matlab
+xlen = 200000;
+x = zeros(2,xlen);
+x0 = [60,-10] ;
+len = length(x);
+k = 1 ;
+table = csvread('value_table_new2.csv');
+new_table = zeros(size(table));
+km = [];
+while k <= len
+    nextx = [98*rand(),-20*rand()];
+    %compute the p from x0
+    [pn,nxnum,nynum] = get_possibility(nextx,table);
+    %km = [km,pn];
+    [p0,zxnum,zynum] = get_possibility(x0,table);
+    p = min(pn/p0,1);
+    if p >= 1
+        x(1,k) = nextx(1);
+        x(2,k) = nextx(2);
+        x0 = nextx ;
+        k = k + 1 ; 
+        new_table(zxnum,zynum) = new_table(zxnum,zynum)+1;
+    else
+        pp = rand();
+        if pp < p
+            x(1,k) = nextx(1);
+            x(2,k) = nextx(2);
+            x0 = nextx   ;
+            k = k + 1 ; 
+            new_table(zxnum,zynum) = new_table(zxnum,zynum)+1;
+        end
+        
+    end
+    
+end
+hist = histc(abs(x(1,1:k-1)),0:0.4:100);
+plot(hist);   
+figure;
+imagesc(new_table);
+colorbar;
+```
