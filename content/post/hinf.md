@@ -45,7 +45,7 @@ K是一个双输入单输出的PI控制器模型。
 $$w = u_{i-1}(s)$$
 $$z = u_i(s),e_i(s)$$
 
-$$v = e_i(s),u_{i-1}(s)$$
+$$v = e_ i(s),u_ {i-1}(s)$$
 
 $$r = \epsilon_i(s)$$
 
@@ -53,10 +53,10 @@ $$r = \epsilon_i(s)$$
 P是一个双输入四输出的控制系统，它的传递函数矩阵如下所示：
 $$\left[
  \begin{matrix}
-   e_i(s)  \\
-   u_i(s) \\
-   e_i(s)  \\
-  u_{i-1}(s)
+   e_ i(s)  \\
+   u_ i(s) \\
+   e_ i(s)  \\
+  u_ {i-1}(s)
   \end{matrix}
   \right] = \left[
  \begin{matrix}
@@ -67,8 +67,8 @@ $$\left[
   \end{matrix}
   \right]  \left[
  \begin{matrix}
-   u_{i-1}(s)  \\
-   \epsilon_i(s) \\
+   u_ {i-1}(s)  \\
+   \epsilon_ i(s) \\
   \end{matrix}
   \right]$$
 
@@ -82,7 +82,7 @@ The closed-loop system is returned in CL. This closed-loop system is given by CL
 
 代码块如下图所示：
 
-```matlab
+```python
 % Thansfer multiple transfer functions into sate space models
 clc 
 clear all;
