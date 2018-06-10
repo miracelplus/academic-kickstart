@@ -63,5 +63,12 @@ preview = true
 
 #### 实验结果
 
+##### 数字图像处理方法
+![](http://osv1xytac.bkt.clouddn.com/18-6-10/85233950.jpg)
+![](http://osv1xytac.bkt.clouddn.com/18-6-10/49609570.jpg)
+
+##### pix2pix方法：
+由于数据集难于寻找，最终采用的街道-真实街道的背景数据效果不高，结果如下：
+![](http://osv1xytac.bkt.clouddn.com/18-6-10/58548392.jpg)
 
 
